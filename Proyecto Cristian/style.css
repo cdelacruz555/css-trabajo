@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.bg-gradient{
+    background: #00C4CC ;
+    background: linear-gradient(
+      90deg,
+      #506E79 67%,
+      #00C4CC 100%
+    );
+}
+section{
+    position: relative;
+    overflow: hidden; /*para que no sobresalga nada de lo que salga*/
+}
+grid{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px; /*tamaño max para los dispositivos más grandes*/
+}
+.wrapper{
+    position: relative;
+}
+.img-container{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 280px; /*tamaño minimo para los dispositivos con pantallas más pequeñas*/
+    min-height: 280px;
+    background-position: center center;
+}
+
+.btn-basic{
+    margin:10px 0;
+    background: #00C4CC;
+    border-radius: 50px;
+    border: none;
+    color: #ffe6e6;
+    padding:20px 70px;
+    font-size: 15px;
+    font-weight:600px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: .5s all ease;
+}
+.btn-basic:hover{
+    background: #b29e84;
+} /*se pone de color el boton para click*/
+.img-logo{
+    width: 180px;
+}
+.nav-enlace{
+    background:#b29e84;
+    border-bottom-right-radius:25px;
+    color: #ffffff;
+    padding: 7px 7px;
+    text-decoration:none;
+}
+.section-first{
+    padding: 40px;
+}
+.curtain{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height:85%;
+    z-index: 0; /*para que no lo ponga encima del siguiente elemento*/
+    /*transform: skewY(-3deg);/*Solo aplicará al eje de la Y que será el efecto de linea transversal*/ 
+    transform-origin: top left;
+}
+.wrapper-first{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.text-container{
+    color: #ffffff;
+}
+.sub-heading{
+    margin:10px 0px;
+}
+.img-container-one{
+    background-image: url(./img/ordenador1.png);
+   margin-left: 60%;
+   width:120%;
+}
